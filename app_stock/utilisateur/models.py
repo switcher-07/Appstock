@@ -20,7 +20,7 @@ class Utilisateur(models.Model):
 
 
 class Manager(models.Model):
-    #le manager a pour clé primaire ou on va dire equivalent un objet utilisateur pour dire qu'il ai lié a l'utilisateur....
+    #le manager a pour "clé primaire" ou on va dire 'une equivalent de clé priamire' un objet utilisateur pour dire qu'il ai lié a l'utilisateur....
     utilisateur = models.OneToOneField(Utilisateur, on_delete=models.CASCADE, related_name='manager_profil')
     # Ajoute ici les autres cahmps du manager si besoin
 
